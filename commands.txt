@@ -1,0 +1,7 @@
+python -m venv venv
+.\venv\Scripts\activate
+pip install numpy pandas scikit-learn matplotlib xgboost
+python MNIST.py
+python best_model.py
+pip freeze > requirements.txt
+pip install -r requirements.txt
